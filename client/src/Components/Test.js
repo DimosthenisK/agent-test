@@ -59,7 +59,9 @@ export function Test() {
     >
       <Card.Body className="card-header">
         <Card.Title>Agent Test</Card.Title>
-        <Card.Text>Question {answers.length + 1} of 60</Card.Text>
+        {answers.length > 60 || (
+          <Card.Text>Question {answers.length + 1} of 60</Card.Text>
+        )}
       </Card.Body>
       {determineBody()}
     </Card>
