@@ -1,0 +1,18 @@
+@import "~bootstrap/scss/bootstrap";
+
+.test-card {
+  .card-header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .star-review-body {
+    .rating-description {
+      padding-top: 15px;
+      text-align: center;
+    }
+  }
+
+  .review-title {
+    text-align: center;
+  }
+}
