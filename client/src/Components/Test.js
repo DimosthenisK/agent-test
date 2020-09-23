@@ -32,7 +32,7 @@ export function Test() {
 
   const newTest = () => {
     setCurrentQuestions(
-      _.sampleSize(questions, 5).sort((a, b) =>
+      _.sampleSize(questions, 60).sort((a, b) =>
         a.qNumber < b.qNumber ? -1 : 1
       )
     );
@@ -47,7 +47,7 @@ export function Test() {
 
   const determineBody = () => {
     if (!currentQuestion) return null;
-    if (step < 6)
+    if (step < 61)
       return <Question question={currentQuestion} onAnswer={handleOnAnswer} />;
     else return <Review answers={answers} onContinue={newTest} />;
   };
