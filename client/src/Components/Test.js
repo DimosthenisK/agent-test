@@ -46,7 +46,7 @@ export function Test() {
   };
 
   const determineBody = () => {
-    if (!currentQuestion) return null;
+    if (!currentQuestion && step == 0) return null;
     if (step < 61)
       return <Question question={currentQuestion} onAnswer={handleOnAnswer} />;
     else return <Review answers={answers} onContinue={newTest} />;
