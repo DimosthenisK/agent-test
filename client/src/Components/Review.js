@@ -50,7 +50,7 @@ export function Review(props) {
       {props.answers
         .filter((answer) => answer.myAnswer !== answer.correctAnswer)
         .map((answer) => renderAnswer(answer))}
-      {/* <Card.Body className="review-submit-container">
+      <Card.Body className="review-submit-container">
         <Button
           variant="outline-primary"
           block
@@ -59,7 +59,7 @@ export function Review(props) {
         >
           New Test
         </Button>
-      </Card.Body> */}
+      </Card.Body>
     </>
   );
 }
