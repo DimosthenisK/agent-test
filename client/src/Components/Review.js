@@ -47,6 +47,17 @@ export function Review(props) {
           </p>
         </Col>
       </Row>
+      <Row>
+        <Col>
+          <h1>
+            {props.answers.filter(
+              (answer) => answer.myAnswer === answer.correctAnswer
+            ).length >= 54
+              ? "Pass!"
+              : "Fail :("}
+          </h1>
+        </Col>
+      </Row>
       {props.answers
         .filter((answer) => answer.myAnswer !== answer.correctAnswer)
         .map((answer) => renderAnswer(answer))}
