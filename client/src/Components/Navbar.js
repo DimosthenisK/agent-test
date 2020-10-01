@@ -12,7 +12,7 @@ export function Navbar() {
           height="30"
           className="d-inline-block align-top"
         />{" "}
-        Agent Test
+        Insurance Agent Test
       </BootstrapNavbar.Brand>
     </BootstrapNavbar>
   );

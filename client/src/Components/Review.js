@@ -49,7 +49,7 @@ export function Review(props) {
       </Row>
       <Row>
         <Col>
-          <h1>
+          <h1 className="result-header">
             {props.answers.filter(
               (answer) => answer.myAnswer === answer.correctAnswer
             ).length >= 54
